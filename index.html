@@ -1,118 +1,177 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>GymWear</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .header {
-            display: flex;
-            align-items: center;
-            background-color: #000000;
-            padding: 10px;
-        }
-        
-        .logo {
-            margin-right: 10px;
-            height: 50px;
-        }
-        
-        .topnav {
-            overflow: hidden;
-            background-color: #000000;
-            margin-top: 10px;
-        }
-        
-        .topnav a {
-            float: left;
-            display: block;
-            color: rgb(253, 253, 253);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        
-        .topnav a.active {
-            background-color: #2196F3;
-            color: white;
-        }
-        
-        .topnav input[type=text] {
-            float: right;
-            padding: 6px;
-            margin-top: 8px;
-            margin-right: 16px;
-            border: none;
-            font-size: 17px;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .topnav a, .topnav input[type=text] {
-                float: right;
-                display: block;
-                text-align: left;
-                width: 100%;
-                margin: 0;
-                padding: 14px;
-            }
-            
-            .topnav input[type=text] {
-                border: 1px solid #ccc;  
-            }
-        }
-        
-        body {
-            background-color: #ffde59;
-            background-image: linear-gradient(to bottom right, #ffde59, #ff914d);
-            text-align: right;
-        }
-        
-        .button-container {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 30px;
-        }
-        
-        .button {
-            font-style: inherit;
-            background-color: transparent;
-            color: black;
-            padding: 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        
-        .button:hover {
-            background-color: navy;
-            color: white;
-        }
-        
-        .title {
-            color: #ffde59;
-        }
-    </style>
 </head>
 <body>
-    <div class="header">
-        <img class="logo" src="logo.jpg" alt="GymWear Logo">
-        <h1 class="title">GymWear</h1>
-    </style>
 
-    </div>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <h1>GymWear</h1>
+            </div><!--logo-->
 
-    <nav class="topnav">
-        <a class="active" href="#login">Login</a>
-        <a href="#registrar-se">Registrar-se</a>
-        <input type="text" placeholder="Search...">
-    </nav>
+            <div class="cabeçalho-link">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Destaque</a>
+                </li>
+                <li>
+                    <a href="#">Novo</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </div><!--cabeçalho-link-->
+            <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div><!--icon-->
+        </header>
+
+        <div class="Meio">
+            <h1>Prepare-se para</h1>
+            <h1>Mudar para Melhor</h1>
+            <P>Novas coleções de inverno</P>
+            <button>Veja as novas coleções</button>
+        </div><!--Meio-->
+    </div><!--background-->
+
+    <section>
+        <h1>NOVAS CATEGORIAS</h1>
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Luck -1.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/Luck-2.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Untitled - 2.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/luck-4.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Untitled-3.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/Untitled - 1.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+    </section>
+
+    <section class="cta">
+        <div class="text-cta">
+            <h6>INVERNO FIT</h6>
+            <h4>20% OFF<br>VEJA NOSSAS NOVAS CHEGADAS</h4>
+            <a href="#" class="btn">Compre agora</a>
+        </div><!--text-cta-->
+    </section><!--cta-->
+
+    <section>
+        <h1>ESTOQUES NOVOS</h1>
+        <div class="Container-roupas">
+            <div class="roupa">
+                 <img src="img/roupa1.jpg" alt="">
+                <p>Lorem Ipsum dizgi</p>
+                <h5>$188</h5>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div><!--roupa-->
+
+
+           <div class="roupa">
+            <img src="img/tren2.jpg" alt="">
+           <p>Lorem Ipsum dizgi</p>
+           <h5>$188</h5>
+           <span><ion-icon name="cart-outline"></ion-icon></span>
+       </div><!--roupa-->
+
+       <div class="roupa">
+        <img src="img/tren3.jpg" alt="">
+       <p>Lorem Ipsum dizgi</p>
+       <h5>$188</h5>
+       <ion-icon name="cart-outline"></ion-icon>
+    </div><!--roupa-->
+
+   <div class="roupa">
+     <img src="img/tren4.jpg" alt="">
+    <p>Lorem Ipsum dizgi</p>
+    <h5>$188</h5><ion-icon name="cart-outline"></ion-icon>
+  </div><!--roupa-->
+ </div><!--container-roupas-->
+    </section>
+
+    <div class="Marcas">
+        <img src="img/brand1.png" alt="Marca">
+        <img src="img/brand2.png" alt="Marca">
+        <img src="img/brand3.png" alt="Marca">
+        <img src="img/brand4.png" alt="Marca">
+        <img src="img/brand5.png" alt="Marca">
+        <img src="img/brand6.png" alt="Marca">
+    </div><!--Marcas-->
+
+    <section class="Contato" id="Contato">
+		<div class="meio-contato">
+			<h3>Equipe GymWear</h3>
+			<h5>Nós envie uma mensagem</h5>
+			<div class="icons">
+				<a href="#"><i class='bx bxl-facebook-square' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+			</div>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Explore</h3>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#featured">Featured</a></li>
+			<li><a href="#new">New</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Mais Serviços</h3>
+			<li><a href="#">Suplementos</a></li>
+			<li><a href="#">Consulta nutricional</a></li>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Parcerias</h3>
+			<li><a href="#">Clothing Store</a></li>
+			<li><a href="#">Trending Shoes</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Sale</a></li>
+		</div>
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2023 All rights reserved |</p>
+	</div>
+
+
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
 
     <div class="button-container">
         <button class="button" onclick="window.location.href='https:/www.bing.com/images/search?q=roupas+femiinas+academia&form=HDRSC3&first=1'">Moda Feminina</button>
