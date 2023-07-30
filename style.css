@@ -11,7 +11,7 @@
 
 
 .background{
-  background-image: url();
+  background-image: url("Imagem fundo");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
