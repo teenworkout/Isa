@@ -1,3 +1,18 @@
+ /*-----------------------------------*\
+ * #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+ * #CUSTOM PROPERTY
+\*-----------------------------------*/
 
 :root {
 
@@ -5,13 +20,13 @@
    * colors
    */
 
-  --middle-blue-green: hsl(176, 35%, 63%);
-  --sonic-silver: hsl(0, 0%, 44%);
-  --eerie-black: hsl(0, 0%, 9%);
-  --ocean-green: hsl(148, 45%, 58%);
-  --candy-pink: hsl(356, 65%, 63%);
-  --cultured: hsl(0, 0%, 96%);
-  --white: hsl(0, 0%, 100%);
+  --middle-blue-green: hsl(19, 98%, 54%);
+  --sonic-silver: hsl(0, 2%, 18%);
+  ---eerie-black: hsl(0, 5%, 7%);
+  --ocean-green: hsl(357, 100%, 50%);
+  --candy-pink: hsl(7, 100%, 50%);
+  --cultured: hsl(0, 10%, 81%);
+  --white: hsl(0, 0%, 97%);
   --black: hsl(0, 0%, 0%);
 
   /**
@@ -99,7 +114,7 @@ ion-icon { pointer-events: none; }
 
 html {
   font-family: var(--ff-jost);
-  color: var(--sonic-silver);
+  color: var(--black);
   scroll-behavior: smooth;
 }
 
@@ -127,7 +142,7 @@ h3 > a { color: inherit; }
 .h2,
 .h3,
 .h4 {
-  color: var(--eerie-black);
+  color: var(--sonic-silver-);
   font-weight: var(--fw-600);
 }
 
@@ -146,8 +161,8 @@ h3 > a { color: inherit; }
 }
 
 .btn {
-  background: var(--background, var(--eerie-black));
-  color: var(--color, var(--white));
+  background: var(--background, var(--));
+  color: var(--color, var(--eerie-blackwhite));
   font-weight: var(--fw-600);
   height: var(--height, 60px);
   padding-inline: 50px;
@@ -364,6 +379,7 @@ h3 > a { color: inherit; }
  * #HERO
 \*-----------------------------------*/
 
+
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,7 +404,6 @@ h3 > a { color: inherit; }
   margin-bottom: 35px;
   max-width: 12ch;
 }
-
 
 
 
@@ -421,7 +436,7 @@ h3 > a { color: inherit; }
 .service-item-icon img { margin-inline: auto; }
 
 .service-item-title {
-  color: var(--eerie-black);
+  color: var(--middle-blue-green);
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
 }
@@ -450,7 +465,7 @@ h3 > a { color: inherit; }
 }
 
 .category-banner {
-  background: var(--cultured);
+  background: var(--middle-blue-green);
   aspect-ratio: 2 / 2.35;
   overflow: hidden;
 }
@@ -495,7 +510,7 @@ h3 > a { color: inherit; }
   font-weight: var(--fw-500);
 }
 
-.filter-btn.active { color: var(--eerie-black); }
+.filter-btn.active { color: var(--middle-blue-green); }
 
 .product-list {
   display: flex;
@@ -511,7 +526,7 @@ h3 > a { color: inherit; }
 }
 
 .product-card .card-badge {
-  background: var(--eerie-black);
+  background: var(--middle-blue-green);
   color: var(--white);
   position: absolute;
   top: 0;
@@ -531,23 +546,23 @@ h3 > a { color: inherit; }
 }
 
 .product-card .card-action-btn {
-  border: 1px solid var(--cultured);
+  border: 1px solid var(--black);
   width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   background: var(--white);
-  color: var(--eerie-black);
+  color: var(--middle-blue-green);
 }
 
-.product-card .card-action-btn:is(:hover, :focus) { border-color: var(--eerie-black); }
+.product-card .card-action-btn:is(:hover, :focus) { border-color: var(--black); }
 
 .product-card .cart-btn {
   flex-grow: 1;
   background: var(--eerie-black);
   color: var(--white);
-  border-color: var(--eerie-black);
+  border-color: var(--middle-blue-green);
 }
 
 .product-card .cart-btn:is(:hover, :focus) {
@@ -1246,4 +1261,7 @@ h3 > a { color: inherit; }
 
   .footer-bottom .container { justify-content: space-between; }
 
+
+
 }  
+
